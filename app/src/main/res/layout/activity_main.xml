@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uy.labexernew.MainActivity">
+
+    <TextView
+        android:id="@+id/tvParagraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paragraph:"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="25dp"
+         />
+
+    <EditText
+        android:id="@+id/etParagraph"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tvParagraph"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etParagraph"
+        android:text="Save"
+        android:layout_marginLeft="40dp"
+        android:onClick="saveParagraph"
+        />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etParagraph"
+        android:text="Clear"
+        android:layout_toRightOf="@id/btnSave"
+        android:layout_marginLeft="20dp"
+        android:onClick="clearParagraph"
+        />
+
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etParagraph"
+        android:text="Display"
+        android:layout_toRightOf="@id/btnClear"
+        android:layout_marginLeft="20dp"
+        android:onClick="displayParagraph"
+        />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:text="Display Paragraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDisplay"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
